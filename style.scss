@@ -7,12 +7,20 @@
 
 }
 
+
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
     align-items: center;
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
+
+    .header{
+        margin-top: 2rem;
+        width: 95%;
+    }
+    
 
 
     main {
@@ -20,10 +28,45 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: auto;
 
         .container{
             margin: 1rem;
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 3.5rem;
+        margin-top: 2rem;
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+        width: 95vw;
+        position: relative;
+        bottom: 0;
+        padding: .6rem;
+        p {
+            margin-top: .8rem;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen 
+   and (max-width : 360px) {
+    body {
+        .container {
+            .row{
+                .col {
+                    .card{
+                        margin:.4rem;
+                    }
+                }
+            }
         }
     }
 }

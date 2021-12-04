@@ -15,11 +15,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
   font-family: 'Poppins', sans-serif;
+}
+
+body .header {
+  margin-top: 2rem;
+  width: 95%;
 }
 
 body main {
@@ -36,10 +42,46 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 body main .container {
   margin: 1rem;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  width: 95vw;
+  position: relative;
+  bottom: 0;
+  padding: .6rem;
+}
+
+body footer p {
+  margin-top: .8rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 360px) {
+  body .container .row .col .card {
+    margin: .4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
